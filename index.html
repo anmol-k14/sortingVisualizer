@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        
+        <div class="card">
+          <header class="sorting"><h1>Sorting Visualizer</h1></header>
+          <div class="sizebutton">
+            <div id="size" class="slidecontainer">
+              Array size
+              <input
+                id="arr_sz"
+                type="range"
+                min="5"
+                max="35"
+                value="15"
+                class="slider"
+              />
+            </div>
+            <div id="speed" class="slidecontainer">
+              Sorting Speed
+              <input
+                id="speed_input"
+                type="range"
+                min="20"
+                max="300"
+                value="60"
+                stepdown="10"
+                class="slider"
+              />
+            </div>
+          </div>
+         
+          <div class="new"><button type="button" class="button-28 newArray" role="button">New Array</div>
+
+          <div class="algo">
+            <div class="sortingbuttons">
+              <div class="bt"><button
+                type="button"
+                class="button-28 butt bubbleSort"
+              >
+                Bubble Sort
+              </button></div>
+              <div class="bt"><button
+                type="button"
+                class="button-28 butt selectionSort"
+              >
+                Selection Sort
+              </button></div>
+              
+              <div class="bt"><button
+                type="button"
+                class="button-28 butt quickSort"
+              >
+                Quick Sort
+              </button></div>
+              <div class="bt"><button
+                type="button"
+                class="button-28 butt insertionSort"
+              >
+                Insertion Sort
+              </button></div>
+              <div class="bt"><button
+                type="button"
+                class="button-28 butt mergeSort"
+              >
+                Merge Sort
+              </button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bars" class="right flex-container"></div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="insertion.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+    <script src="selection.js"></script>
+  </body>
+</html>
